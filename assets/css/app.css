@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #121214;
+    max-width: 1140px;
+    margin: auto;
+    color: #ccc;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 20px;
+    min-height: 30px;
+}
+
+a {
+    color: dodgerblue;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.info, .name, .links {
+    flex: 1;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+}
+
+/* Habilidades */
+
+.habilidades h2 {
+    border-bottom: 0.5px solid #ccc;
+    padding-bottom: 5px;
+    margin: 36px 0px;
+    font-weight: 500;
+}
+
+.habilidades p {
+    font-size: 20px;
+}
+
+.project {
+    margin: 40px 0px;
+}
+
+.project p {
+    color: #ffa500;
+}
+
+.project p.italic {
+    color: #ccc;
+    font-style: italic;
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.project strong {
+    color: #ccc;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.project a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.project ul {
+    padding-left: 20px;
+    margin: 20px 0px 10px 0px;
+}
+
+.project ul li {
+    font-size: 18px;
+}
+
+#pessoal li {
+    margin: 10px 0px;
+}
+
+.underline-none {
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links, .name h2 {
+        margin-top: 20px;
+    }
+    .links a {
+        text-align: left;
+    }
+}
